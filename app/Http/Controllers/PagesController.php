@@ -22,7 +22,10 @@ class PagesController extends Controller
     * @return Response
     */
     public function showAbout(){
-        return view('about');
+
+        $myName = "Isuru Madusanka";
+        
+        return view('about')->with('name', $myName);
     }
 
     /**
