@@ -13,10 +13,6 @@
 
 Route::get('/', 'PagesController@index');
 
-Route::get('/about', function() {
-    return view('about'); 
-}); 
+Route::get('/about', 'PagesController@showAbout'); 
 
-Route::get('/contact', function() {
-    return view('contact'); 
-});
+Route::get('/contact', 'PagesController@showContact');
