@@ -21,11 +21,9 @@ class PagesController extends Controller
     * 
     * @return Response
     */
-    public function showAbout(){
-
-        $myName = "Isuru Madusanka";
+    public function showAbout(){        
         
-        return view('about')->with('name', $myName);
+        return view('about');
     }
 
     /**
@@ -35,6 +33,15 @@ class PagesController extends Controller
     */
     public function showContact(){
         return view('contact');
+    }
+
+    /**
+    * Show the post view
+    * 
+    * @return Response
+    */
+    public function showPost(){
+        return view('post');
     }
 
 }
